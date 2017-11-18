@@ -5,7 +5,7 @@ This is just a basic Contact Management application to demonstrate Laravel Frame
 
 **Steps:**
 
-1.git clone darkpain/
+1.git clone https://github.com/DarkPain0/hack-cyprus-demo.git
 
 2.php composer install
 
@@ -18,6 +18,7 @@ This is just a basic Contact Management application to demonstrate Laravel Frame
 **More info:**
 
 1.https://laravel.com/docs/5.5/installation
+
 2.https://laravel.com/docs/5.5/homestead
 
 _For any questions find me:_
