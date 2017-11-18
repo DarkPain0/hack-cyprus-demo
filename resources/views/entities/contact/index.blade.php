@@ -7,17 +7,17 @@
 @section('content')
     <div class="container-fluid">
 
-        <div class="page-header no-margin">
+        <div class="page-header no-margin text-center">
             <h1>Contact List</h1>
             <small>{!! 'Sorted by Latest Additions-Updates' !!}</small>
         </div>
 
         <div class="panel panel-default">
+            <a class="btn btn-md btn-success pull-right" href="{!! route('contacts.create') !!}">
+                <span class="glyphicon glyphicon-plus"></span> Add New </a>
             <div class="panel-body">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <a class="btn btn-md btn-success" href="{!! route('contacts.create') !!}">
-                            <span class="glyphicon glyphicon-plus"></span> Add New </a>
                         <table class="table" data-toggle="table" data-id-field="id" data-show-columns="true"
                                data-cookie="true" data-cookie-id-table="contactsIndex" data-filter-control="true"
                                data-filter-show-clear="true">
