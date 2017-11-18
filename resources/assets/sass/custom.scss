@@ -1,0 +1,36 @@
+$color_red: rgb(253, 54, 36);
+$green: #09ad7e;
+
+.required {
+  label {
+    font-weight: bold;
+    &:after {
+      color: $color_red;
+      content: ' *';
+      display: inline;
+    }
+  }
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.panel-heading {
+  span {
+    margin-top: -20px;
+    font-size: 15px;
+  }
+}
+
+label {
+  &:hover {
+    &:before {
+      border: 2px solid #4778d9 !important;
+    }
+  }
+}
