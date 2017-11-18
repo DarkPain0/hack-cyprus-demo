@@ -17,10 +17,15 @@ Route::view('/home', 'home')
 	->name('home')
 	->middleware('auth');
 Route::redirect('/', '/home');
-Route::resource('contacts', 'ContactController');
-Route::resource('addresses', 'AddressController');
-Route::resource('electronic-addresses', 'ElectronicAddressController');
-Route::resource('phones', 'PhoneController');
+Route::resource('contacts', 'ContactController')
+	->middleware('auth');
+Route::resource('addresses', 'AddressController')
+	->middleware('auth');
+Route::resource('electronic-addresses', 'ElectronicAddressController')
+	->middleware('auth');
+Route::resource('phones', 'PhoneController')
+	->middleware('auth');
 Route::resource('users', 'UserController', ['only' => [
 	'index', 'edit', 'update'
-]]);
+]])
+	->middleware('admin');
