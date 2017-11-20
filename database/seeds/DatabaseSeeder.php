@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
 				$contact->addresses()
 					->saveMany(factory(App\Address::class, 4)
 						->make(['contact_id' => $contact->id]));
-				$contact->eAddresses()
+				$contact->electronicAddresses()
 					->saveMany(factory(App\ElectronicAddress::class, 4)
 						->make(['contact_id' => $contact->id]));
 				$contact->phones()
@@ -34,7 +34,7 @@ class DatabaseSeeder extends Seeder
 				$contact->addresses()
 					->saveMany(factory(App\Address::class, 4)
 						->make(['contact_id' => $contact->id]));
-				$contact->eAddresses()
+				$contact->electronicAddresses()
 					->saveMany(factory(App\ElectronicAddress::class, 4)
 						->make(['contact_id' => $contact->id]));
 				$contact->phones()
